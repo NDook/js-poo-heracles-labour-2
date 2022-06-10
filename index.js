@@ -10,9 +10,9 @@ const shield = new Shield(10);
 console.log(shield)
 
 /** Create Heracles  */
-const heracles = new Fighter("🧔 Heracles", 20, 6, sword.damage, shield.protection);
+const heracles = new Fighter("🧔 Heracles", 20, 6, sword, shield);
 //console.log(heracles);
-
+//console.log(heracles.getDefense()) tester 
 
 /** Create the opponent  */
 const boar = new Fighter("🐗 Erymanthian Boar", 25, 12);
@@ -62,4 +62,3 @@ const score = (fighter1, fighter2) => {
   console.log(`💀 ${result.loser.name} is dead`);
   console.log(`🏆 ${result.winner.name} wins (💙 ${result.winner.life} )`);
 }
-heracles.fight(boar);

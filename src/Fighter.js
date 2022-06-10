@@ -6,8 +6,8 @@ class Fighter {
         this.strength = strength;
         this.dexterity = dexterity;
         this.life = MAX_LIFE;
-        this.weapon = weapon ;
-        this.shield = shield ;
+        this.weapon = weapon;
+        this.shield = shield;
     }
     
 
@@ -21,16 +21,12 @@ class Fighter {
     }
 
     getDamage() {
-        // let fighterStrength = this.strength;
-        // return fighterStrength = weaponDamage ? fighterStrength + weaponDamage : fighterStrength ;
-        return this.weapon ? this.strength + this.weapon : this.strength;
+        return this.weapon ? this.strength + this.weapon.damage : this.strength;
         
     }
 
     getDefense(){
-        // let defenderDexterity = this.dexterity;
-        //return defenderDexterity = defenderDexterity ? defenderDexterity + defensePoint : defenderDexterity;
-        return this.shield ? this.dexterity + this.shield : this.dexterity;
+        return this.shield ? this.dexterity + this.shield.protection : this.dexterity;
 
     }
     
